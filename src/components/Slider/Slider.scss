@@ -1,0 +1,47 @@
+.sliderContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .imageSlider {
+        position: relative;
+    
+        .arrow {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 50%;
+            border: 1px solid green;
+            background-color: white;
+            cursor: pointer;
+            &:hover {
+                background-color: green;
+            }
+        }
+        .rightArrow {
+            right: 0;
+        }
+    }
+    .imgBox {
+        width: 150px;
+        height: 100px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-top: 20px;
+      
+        
+      }
+      
+      .imgBox.active {
+        border: 5px solid green;
+        border-radius: 10px;
+    }
+}
+
+

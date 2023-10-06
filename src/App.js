@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Slider from './components/Slider/Slider';
+import img1 from './assets/image/carImg.jpg';
+import img2 from './assets/image/carImg2.webp';
+import img3 from './assets/image/carImg3.jpg';
+import img4 from './assets/image/carImg4.jpg';
+
+
+const images = [
+  img1,
+  img2,
+  img3,
+  img4
+]
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Slider images={images} />
     </div>
   );
 }
